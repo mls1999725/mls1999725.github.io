@@ -1,0 +1,162 @@
+<html>
+<head>
+ 	<title>携程网首页</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="携程.js" type="text/javascript" charset="utf-8"></script>
+ 	<link rel="stylesheet" type="text/css" href="携程.css"/>
+</head>
+<body>
+
+<div id="main">
+  	<div class="search-box1"> 		
+  		<form  method="post">
+  			<input class="input-search1" type="search" placeholder="搜索：目的地/酒店/景点/航班号" onclick="turn()"/>
+  		</form>
+  		<span class="glyphicon glyphicon-search search1"></span>
+  		<div class="userpart"><span class="glyphicon glyphicon-user user-head"></span></div>
+  		<div id="user-box"> <p id="my">我的</p> </div>
+  	</div>
+	<div class="turn-box">
+		<img class="turn" src="./t1.jpg"/>
+		<img class="turn" src="./t2.jpg"/>
+		<img class="turn" src="./t3.jpg"/>
+		<img class="turn" src="./t4.jpg"/>
+		<img class="turn" src="./t5.jpg"/>
+		<img class="turn" src="./t6.jpg"/>
+		<img class="turn" src="./t7.jpg"/>
+	</div>
+	<div class="flex-container">
+		<div class="flex-item">景点.玩乐</div>
+		<div class="flex-item">周边游</div>
+		<div class="flex-item">美食林</div>
+		<div class="flex-item">一日游</div>
+		<div class="flex-item">当地攻略</div>
+	</div>
+<div class="choose-box ">
+	<table cellspacing="1 ">
+		<colgroup  width="35%" ></colgroup>
+		<tr>
+			<td rowspan="2" class="row1" style="border-top-left-radius:10px">酒店</td>
+			<td class="row1">海外酒店</td>
+			<td class="row1"  style="border-top-right-radius:10px">团购</td>
+		</tr>
+		<tr>
+			<td class="row1">特价酒店</td>
+			<td class="row1">民宿·客栈</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="row2">机票</td>
+			<td class="row2">火车票</td>
+			<td class="row2">汽车票·船票</td>
+		</tr>
+		<tr>
+			<td class="row2">特价机票</td>
+			<td class="row2">专车·租车</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="row3" style="border-bottom-left-radius:10px">旅游</td>
+			<td class="row3">门票</td>
+			<td class="row3">游轮旅行</td>
+		</tr>
+		<tr>
+			<td class="row3">目的地攻略</td>
+			<td class="row3" style="border-bottom-right-radius:10px">定制旅行</td>
+		</tr>
+	</table>
+</div>
+<div class="flex-container">
+	<div class="flex-item">WIFI电话卡</div>
+	<div class="flex-item">保险·签证</div>
+	<div class="flex-item">外币兑换</div>
+	<div class="flex-item">购物</div>
+	<div class="flex-item">当地向导</div>
+	<div class="flex-item">自由行</div>
+	<div class="flex-item">境外玩乐</div>
+	<div class="flex-item">礼品卡</div>
+	<div class="flex-item">信用卡</div>
+	<div class="flex-item">更多</div>
+</div>
+<div class="hot row">
+	<div class="col3"> <i>热门活动</i></div>
+	<div class="col3 col4"> 
+		<span class="morething">获取更多福利</span> 
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</div>	
+</div>
+<div class="show-pics" >
+	<img src="./r1.jpg"/>
+	<img src="./r2.jpg"/>
+	<img src="./r3.jpg"/>
+	<img src="./r4.jpg"/>
+	<img src="./r5.jpg"/>
+	<img src="./r6.jpg"/>
+</div>
+<div class="foot row">
+	<div class="col3">
+		<span class="glyphicon glyphicon-earphone" ></span>
+		电话预订
+	</div>
+	<div class="col3">
+		<span class="glyphicon glyphicon-download-alt" ></span>
+		下载客户端
+	</div>
+	<div class="col3">
+		<span class="glyphicon glyphicon-user user-foot" ></span>
+		我的
+	</div>
+</div>
+</div>
+<div id="search" style="display: none;">
+	<div class="search-box2"> 		 		
+		<form method="post">		
+			<input class="input-search2" type="search" onclick="turn()" />
+		</form>
+		<div class="secondsearch"><p>搜索</p></div>
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="glyphicon glyphicon-search search2"></span>
+		<span class="glyphicon glyphicon-remove"></span>
+  	</div>
+	<div class="recommendlist">
+	  	<p>下载携程app 专享优惠低至 <span style="color: red;">50%</span></p>
+	</div>
+	<div class="hot-activity">
+	  	热门搜索
+	</div>
+	<div class="listservices">		
+		<div class="row">
+  	    	<div class="col3" >酒店</div>
+  	    	<span style="color: grey; float: right">↖</span>
+	    	</div>
+		<div class="row">
+  	    	<div class="col3" >优惠券</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>
+		<div class="row">
+  	    	<div class="col3" >签证</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>
+		<div class="row">
+  	    	<div class="col3" >旅游</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>	
+		<div class="row">
+  	    	<div class="col3" >WIFI</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>
+		<div class="row">
+  	    	<div class="col3" >机票</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>		
+		<div class="row">
+  	    	<div class="col3" >攻略</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>
+		<div class="row">
+  	    	<div class="col3" >门票</div>
+  	    	<span style="color: grey; float: right">↖</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
